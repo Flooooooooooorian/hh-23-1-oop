@@ -1,3 +1,5 @@
+import model.Book;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -10,14 +12,13 @@ public class Main {
         System.out.println(abdulsBook.getCover());
         System.out.println(abdulsBook.getAuthor());
         System.out.println(abdulsBook.getTitle());
+        System.out.println(abdulsBook.getIsbn());
 
 
-        Book robinsBook = new Book();
-
-        robinsBook.setCover("Galaxy");
-        robinsBook.setAuthor("Dr");
+        Book robinsBook = new Book("Galaxy", "Atlas", "Dr", 0, "456", "Kosmos", 0.0);
 
         System.out.println(robinsBook.getCover());
         System.out.println(robinsBook.getAuthor());
+        System.out.println(robinsBook.getIsbn());
     }
 }
