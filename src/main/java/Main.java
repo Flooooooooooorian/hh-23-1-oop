@@ -3,12 +3,21 @@ public class Main {
     public static void main(String[] args) {
         Book abdulsBook = new Book();
 
-        abdulsBook.cover = "Gebäude";
-        abdulsBook.author = "Elisabeth Jung";
-        abdulsBook.title = "Java Übungsbuch";
+        abdulsBook.setCover("Gebäude");
+        abdulsBook.setAuthor("Elisabeth Jung");
+        abdulsBook.setTitle("Java Übungsbuch");
 
-        System.out.println(abdulsBook.cover);
-        System.out.println(abdulsBook.author);
-        System.out.println(abdulsBook.title);
+        System.out.println(abdulsBook.getCover());
+        System.out.println(abdulsBook.getAuthor());
+        System.out.println(abdulsBook.getTitle());
+
+
+        Book robinsBook = new Book();
+
+        robinsBook.setCover("Galaxy");
+        robinsBook.setAuthor("Dr");
+
+        System.out.println(robinsBook.getCover());
+        System.out.println(robinsBook.getAuthor());
     }
 }
